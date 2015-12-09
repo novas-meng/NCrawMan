@@ -46,9 +46,7 @@ public class Main
 
         }
 */
-
-        threadLocal.set(6);
-        threadLocal.set(7);
+        
         threadLocal.set(8);
         threadLocal.set(9);
 
