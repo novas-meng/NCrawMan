@@ -1,0 +1,436 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>湖北省首届亲子博览会</title>
+<link href="http://www.cnhubei.com/js/common_2014.css" rel="stylesheet" type="text/css" ignoreapd="1">
+<link href="index_2015.css" rel="stylesheet" type="text/css" ignoreapd="1">
+<meta itemprop="name" content="湖北省首届亲子博览会"/>
+<meta name="keywords" content="湖北省首届亲子博览会" />
+<meta itemprop="image" content="http://www.cnhubei.com/images/jcw_logo03.jpg" />
+<meta name="description" itemprop="description" content="湖北省首届亲子博览会" />
+<script type="text/javascript" src="http://www.cnhubei.com/js/183jquery.min.js" ignoreapd="1">
+
+
+
+</script>
+<script type="text/javascript" src="http://www.cnhubei.com/js/jquery.SuperSlide.2.1.1.js" ignoreapd="1">
+
+
+
+</script>
+<script type="text/javascript" src="hxm.js" ignoreapd="1">
+
+
+
+</script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=MziRE4nOoSudBbjBMbm9TMnw" ignoreapd="1" charset="utf-8">
+
+
+
+</script>
+<script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js" ignoreapd="1" charset="utf-8">
+
+
+
+</script>
+<link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" ignoreapd="1" charset="utf-8">
+<!--[if lte IE 6]>
+<script src="http://www.cnhubei.com/iepng.js" type="text/javascript" ignoreapd="1">
+
+
+
+</script>
+<![endif]-->
+<!--[if lt IE 6]>
+
+<style>
+/* 除IE6浏览器的通用方法 */
+.ie6fixedBR1{position:fixed;right:300px;bottom:0}
+/* IE6浏览器的特有方法 */
+/* 修正IE6振动bug */
+* html,* html body{background-image:url(about:blank);background-attachment:fixed}
+* html .ie6fixedBR1{position:absolute;left:expression(eval(document.documentElement.scrollLeft+document.documentElement.clientWidth-this.offsetWidth)-(parseInt(this.currentStyle.marginLeft,10)||0)-(parseInt(this.currentStyle.marginRight,10)||0));top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)-30))}
+</style>
+<![endif]-->
+<base target="_blank" />
+</head>
+<body>
+<div class="txha_banner">
+	<div class="kzbwg_main">
+    
+        <a class="fleft" href="./bmtd/sjcz/201510/t3421325.shtml"><img src="images/qzblh_01.png" ignoreapd="1"></a>
+        
+        
+    	<a class="fright" href="./bmtd/cyds/201510/t3421335.shtml"><img src="images/qzblh_03.png" ignoreapd="1"></a>
+        
+
+    
+    	<a href="./bmtd/gyzw/201510/t3421327.shtml"><img src="images/qzblh_02.png" ignoreapd="1"></a>
+        
+    </div>
+</div>
+	<div class="kzbwg_main">
+    	<div class="blank10"></div>
+		<div class="sygs_spqh">
+			<div class="bd">
+				<ul>
+                
+					<li><a href="http://photo.cnhubei.com/2015/1128/276432.shtml"><img src='./jdt/201511/W020151130377161288710.jpg' alt='湖北首届亲子博览会:百余趣味项目让观展者流连忘返' title='湖北首届亲子博览会:百余趣味项目让观展者流连忘返'></a><div class="bt"><a href="http://photo.cnhubei.com/2015/1128/276432.shtml">湖北首届亲子博览会:百余趣味项目让观展者流连忘返</a></div><div class="bg"></div></li>
+                    
+					<li><a href="http://news.cnhubei.com/xw/wuhan/201511/t3445695.shtml"><img src='./jdt/201511/W020151119594746332409.jpg' alt='果倍爽星宝贝少儿才艺大赛海选 让孩子展示“最美的我”' title='果倍爽星宝贝少儿才艺大赛海选 让孩子展示“最美的我”'></a><div class="bt"><a href="http://news.cnhubei.com/xw/wuhan/201511/t3445695.shtml">果倍爽星宝贝少儿才艺大赛海选 让孩子展示“最美的我”</a></div><div class="bg"></div></li>
+                    
+					<li><a href="http://news.cnhubei.com/xw/sh/201510/t3426042.shtml"><img src='./jdt/201510/W020151026406269297047.jpg' alt='果倍爽星宝贝少儿才艺大赛启动报名' title='果倍爽星宝贝少儿才艺大赛启动报名'></a><div class="bt"><a href="http://news.cnhubei.com/xw/sh/201510/t3426042.shtml">果倍爽星宝贝少儿才艺大赛启动报名</a></div><div class="bg"></div></li>
+                    
+					<li><a href="http://news.cnhubei.com/xw/sh/201510/t3431772.shtml"><img src='./jdt/201511/W020151124419109229976.jpg' alt='十大非遗项目将亮相武汉亲子博览会' title='十大非遗项目将亮相武汉亲子博览会'></a><div class="bt"><a href="http://news.cnhubei.com/xw/sh/201510/t3431772.shtml">十大非遗项目将亮相武汉亲子博览会</a></div><div class="bg"></div></li>
+                    
+					<li><a href="http://news.cnhubei.com/xw/sh/201510/t3416150.shtml"><img src='./jdt/201510/W020151020592262670064.jpg' alt='湖北省首届亲子博览会11月在武汉举行' title='湖北省首届亲子博览会11月在武汉举行'></a><div class="bt"><a href="http://news.cnhubei.com/xw/sh/201510/t3416150.shtml">湖北省首届亲子博览会11月在武汉举行</a></div><div class="bg"></div></li>
+                    
+                    </ul>
+                </div>
+			<div class="hd">
+				<ul></ul>
+			</div>
+		</div>
+		<script type="text/javascript">
+
+
+
+jQuery(".sygs_spqh").slide({ mainCell:".bd ul",titCell:".hd ul",autoPage:true,effect : "left",vis:1,scroll:1,trigger: "click"});</script>
+		<div class="txha_mtjj">
+			
+			<div class="p2">
+				<h1><a href="http://www.cnhubei.com/xwzt/2015/hbssjqzblh/201511/t3466933.shtml">湖北首届亲子博览会收官落幕 期待明年再相聚 </a></h1>
+				<span>100多个品牌商家竞相参展，100多项趣味项目让观展者流连忘返……11月29日，湖北省亲子博览会暨果倍爽星宝贝首届少儿才艺大赛落下帷幕。<a href="http://www.cnhubei.com/xwzt/2015/hbssjqzblh/201511/t3466933.shtml">[详细]</a></span>
+			</div>
+            
+            <div class="blank10"></div>
+            <ul>
+            
+            	<li>·<a href="./201511/t3467045.shtml">果倍爽星宝贝少儿才艺大赛圆满落幕（图）</a></li>
+                
+            	<li>·<a href="./201511/t3467716.shtml">多彩童年多“财”成长 楚天财富网闪耀亲博会</a></li>
+                
+            	<li>·<a href="./mtbd/201511/t3467627.shtml">[湖北亲博会]武汉木兰玫瑰园：打造华中最大玫瑰园景区</a></li>
+                
+            	<li>·<a href="./mtbd/201511/t3467626.shtml">[湖北亲博会]武汉木兰草原推特价亲子游</a></li>
+                
+            	<li>·<a href="./mtbd/201511/t3467624.shtml">[湖北亲博会]去武汉木兰草原骑马射箭 “亲子”消费儿童免单</a></li>
+                
+            </ul>
+            <p><a href="./mtbd/"></a></p>
+		</div>
+        <div class="blank30"></div>
+        <div class="qjblh_lm"></div>
+        <div class="blank30"></div>
+        <div class="qjblh_qh">
+        	<div class="prev"></div>
+        	<ul>
+            	
+            	<li>
+                	<a href="#"><img src='./ppg/201511/W020151120623096153026.jpg' alt='木兰云雾山' title='木兰云雾山'><p>木兰云雾山</p></a>
+                </li>
+                
+            	<li>
+                	<a href="#"><img src='./ppg/201511/W020151120622301612003.jpg' alt='木兰玫瑰园' title='木兰玫瑰园'><p>木兰玫瑰园</p></a>
+                </li>
+                
+            	<li>
+                	<a href="#"><img src='./ppg/201511/W020151120621616248577.jpg' alt='锦里沟旅游城' title='锦里沟旅游城'><p>锦里沟旅游城</p></a>
+                </li>
+                
+            	<li>
+                	<a href="#"><img src='./ppg/201511/W020151120619571482853.jpg' alt='木兰天池' title='木兰天池'><p>木兰天池</p></a>
+                </li>
+                
+            	<li>
+                	<a href="#"><img src='./ppg/201511/W020151120623673947799.png' alt='木兰草原' title='木兰草原'><p>木兰草原</p></a>
+                </li>
+                
+            	<li>
+                	<a href="http://www.cnhubei.com/xwzt/2015/hbssjqzblh/index.shtml"><img src='./ppg/201511/W020151117346887277113.png' alt='挂号网' title='挂号网'><p>挂号网</p></a>
+                </li>
+                
+            	<li>
+                	<a href="#"><img src='./ppg/201510/W020151026415215719767.png' alt='星期八小镇' title='星期八小镇'><p>星期八小镇</p></a>
+                </li>
+                
+            	<li>
+                	<a href="#"><img src='./ppg/201510/W020151026414544066398.jpg' alt='养乐多' title='养乐多'><p>养乐多</p></a>
+                </li>
+                
+            	<li>
+                	<a href="#"><img src='./ppg/201510/W020151020602562094606.jpg' alt='悠游堂' title='悠游堂'><p>悠游堂</p></a>
+                </li>
+                
+            	<li>
+                	<a href="#"><img src='./ppg/201510/W020151026414855780528.jpg' alt='58同城' title='58同城'><p>58同城</p></a>
+                </li>
+                
+            	<li>
+                	<a href="#"><img src='./ppg/201510/W020151020601956801791.png' alt='伊利' title='伊利'><p>伊利</p></a>
+                </li>
+                
+            	<li>
+                	<a href="#"><img src='./ppg/201510/W020151020601482386356.png' alt='河马宅回收' title='河马宅回收'><p>河马宅回收</p></a>
+                </li>
+                
+            	<li>
+                	<a href="#"><img src='./ppg/201510/W020151020601071677092.png' alt='鄂旅投' title='鄂旅投'><p>鄂旅投</p></a>
+                </li>
+                
+            	<li>
+                	<a href="#"><img src='./ppg/201510/W020151020600436610145.jpg' alt='东湖海洋世界' title='东湖海洋世界'><p>东湖海洋世界</p></a>
+                </li>
+                
+            	<li>
+                	<a href="#"><img src='./ppg/201510/W020151020597428669261.png' alt='果倍爽少儿果汁饮料' title='果倍爽少儿果汁饮料'><p>果倍爽少儿果汁饮料</p></a>
+                </li>
+                
+            </ul>
+            <div class="next"></div>
+        </div>
+        <script type="text/javascript">
+
+
+
+jQuery(".qjblh_qh").slide({ mainCell:"ul",effect : "leftLoop",vis:6,scroll:1,autoPlay:true,interTime:2500,trigger: "click"});</script>
+        <div class="blank21"></div>
+        <!--<div class="qjblh_hdap">
+        	<div class="bd">
+            	<ul>
+                
+                	<li>
+                    	<div class="p1">
+                        	<div class="blank21"></div>
+                            
+                            <span>健康专题</span>
+						</div>
+                        <div class="p2">
+                        	<div class="blank40"></div><div class="blank30"></div>
+                        	<dl>
+                            
+                            </dl>
+                        </div>
+                    </li>
+                    
+                	<li>
+                    	<div class="p1">
+                        	<div class="blank21"></div>
+                            
+                            <span>专题推荐区</span>
+						</div>
+                        <div class="p2">
+                        	<div class="blank40"></div><div class="blank30"></div>
+                        	<dl>
+                            
+                            </dl>
+                        </div>
+                    </li>
+                    
+                	<li>
+                    	<div class="p1">
+                        	<div class="blank21"></div>
+                            
+                        	<a href="http://www.cnhubei.com/xwzt/2015/2015zqlft/index.shtml"><img src='' alt='湖北省军区某舟桥旅锻造新“四有”军人' title='湖北省军区某舟桥旅锻造新“四有”军人'><p>湖北省军区某舟桥旅锻造新“四有”军人</p></a>
+                            
+                            <span>活动专题</span>
+						</div>
+                        <div class="p2">
+                        	<div class="blank40"></div><div class="blank30"></div>
+                        	<dl>
+                            
+                            	<dd>
+                                	<p><font>活动：</font></p>
+                                	<p><font>时间：</font></p>
+                                </dd>
+                                
+                            	<dd>
+                                	<p><font>活动：</font></p>
+                                	<p><font>时间：</font>综合信息</p>
+                                </dd>
+                                
+                            	<dd>
+                                	<p><font>活动：</font></p>
+                                	<p><font>时间：</font>综合信息</p>
+                                </dd>
+                                
+                            	<dd>
+                                	<p><font>活动：</font></p>
+                                	<p><font>时间：</font></p>
+                                </dd>
+                                
+                            </dl>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="blank40"></div>
+            <div class="hd">
+            	<div class="blank5"></div>
+            	<ul>
+                
+                	<li>健康专题</li>
+                    
+                	<li>专题推荐区</li>
+                    
+                	<li>活动专题</li>
+                    
+                </ul>
+            </div>
+        </div>
+        <script type="text/javascript">
+
+
+
+jQuery(".qjblh_hdap").slide({ mainCell:".bd ul",vis:1,scroll:1,trigger: "click"});</script>-->
+	</div>
+	<div class="blank40"></div>
+    <div class="qjblh_ldjj">
+    	<div class="kzbwg_main">
+    	<div class="blank40"></div>
+        <div class="qjblh_tup">
+        
+        	<a href="http://www.cnhubei.com/xwzt/2015/hbssjqzblh/index.shtml"><img class="fleft" src='./jchd/201511/W020151123397434182455.jpg' alt='少儿才艺大赛' title='少儿才艺大赛'></a>
+            
+            <ul class="img1">
+            
+            	<li>
+                <a href="http://www.cnhubei.com/xwzt/2015/hbssjqzblh/index.shtml#;"><img src='./jchd/201511/W020151123395666333582.gif' alt='吉祥物设计' title='吉祥物设计'></a>
+                </li>
+                
+            	<li>
+                <a href="http://www.cnhubei.com/xwzt/2015/hbssjqzblh/index.shtml#;"><img src='./jchd/201511/W020151123409884584534.jpg' alt='亲子运动会 ' title='亲子运动会 '></a>
+                </li>
+                
+            	<li>
+                <a href="http://www.cnhubei.com/xwzt/2015/hbssjqzblh/index.shtml#;"><img src='./jchd/201511/W020151123392650694745.jpg' alt='非遗精品展' title='非遗精品展'></a>
+                </li>
+                
+            	<li>
+                <a href="http://www.cnhubei.com/xwzt/2015/hbssjqzblh/index.shtml#;"><img src='./jchd/201511/W020151123388826477569.jpg' alt='3D魔幻画' title='3D魔幻画'></a>
+                </li>
+                
+            </ul>
+            
+        	<a href="http://www.cnhubei.com/xwzt/2015/hbssjqzblh/index.shtml#;"><img class="fright" src='./jchd/201511/W020151124422777507993.jpg' alt='奇妙的3D打印' title='奇妙的3D打印'></a>
+            
+        </div>
+        <div class="blank10"></div><div class="blank110"></div><div class="blank90"></div>
+        <div class="p_cont">
+          <div id="scrollBox">
+          
+    		<div class="piclist"> 
+               <a href="http://news.cnhubei.com/xw/wuhan/201511/t3457138.shtml"><img src='./ld/201511/W020151123398907198270.jpg' alt='100余种呆萌“多肉”植物将亮相湖北亲子博览会' title='100余种呆萌“多肉”植物将亮相湖北亲子博览会'></a>
+                <div class="bt"><a href="http://news.cnhubei.com/xw/wuhan/201511/t3457138.shtml">100余种呆萌“多肉”植物将亮相湖北亲子博览会</a></div>
+                <div class="bg"></div>
+            </div>
+            
+    		<div class="piclist"> 
+               <a href="http://news.cnhubei.com/xw/sh/201511/t3455828.shtml"><img src='./ld/201511/W020151119588677689327.jpg' alt='亲，快来亲博会！黄陂景群万元门票大赠送哟' title='亲，快来亲博会！黄陂景群万元门票大赠送哟'></a>
+                <div class="bt"><a href="http://news.cnhubei.com/xw/sh/201511/t3455828.shtml">亲，快来亲博会！黄陂景群万元门票大赠送哟</a></div>
+                <div class="bg"></div>
+            </div>
+            
+    		<div class="piclist"> 
+               <a href="http://www.cnhubei.com/xwzt/2015/hbssjqzblh/201511/t3450834.shtml"><img src='./ld/201511/W020151116357825960216.jpg' alt='小果农们，湖北亲子博览会喊你去摘菜啦' title='小果农们，湖北亲子博览会喊你去摘菜啦'></a>
+                <div class="bt"><a href="http://www.cnhubei.com/xwzt/2015/hbssjqzblh/201511/t3450834.shtml">小果农们，湖北亲子博览会喊你去摘菜啦</a></div>
+                <div class="bg"></div>
+            </div>
+            
+    		<div class="piclist"> 
+               <a href="http://news.cnhubei.com/xw/jj/201511/t3452125.shtml"><img src='./ld/201511/W020151124425416970889.jpg' alt='冰天雪地去玩水！亲博会邀您相约浪口泡温泉' title='冰天雪地去玩水！亲博会邀您相约浪口泡温泉'></a>
+                <div class="bt"><a href="http://news.cnhubei.com/xw/jj/201511/t3452125.shtml">冰天雪地去玩水！亲博会邀您相约浪口泡温泉</a></div>
+                <div class="bg"></div>
+            </div>
+            
+    		<div class="piclist"> 
+               <a href="http://news.cnhubei.com/xw/sh/201510/t3416150.shtml"><img src='./ld/201511/W020151116362542359895.jpg' alt='湖北省首届亲子博览会11月在武汉举行' title='湖北省首届亲子博览会11月在武汉举行'></a>
+                <div class="bt"><a href="http://news.cnhubei.com/xw/sh/201510/t3416150.shtml">湖北省首届亲子博览会11月在武汉举行</a></div>
+                <div class="bg"></div>
+            </div>
+            
+  </div>
+	<a href="#;" target="_self"; onclick="scrollPic.pre()" class="arrleft" onfocus="this.blur()"></a> <a href="#;" target="_self"; onclick="scrollPic.next()" class="arrright" onfocus="this.blur()"></a>
+    <script type="text/javascript">
+
+
+
+
+var scrollPic = new scrollPic3D();
+scrollPic.boxId = 'scrollBox'; //容器id
+scrollPic.width = 880; //容器宽度（只包括图片部分的宽度，不包括两头的箭头）
+scrollPic.height = 424; //容器高度
+scrollPic.imgWidth = 576; //图片宽度
+scrollPic.imgHeight = 384; //图片高度（包括图片下方文字部分的高度）
+scrollPic.descHeight = 30; //描述宽度
+scrollPic.showsNumber = 5; //显示数量
+scrollPic.autoPlay = true; //是否自动播放
+scrollPic.autoPlayTime = 5;
+scrollPic.zoom = 0.5; //小图缩放比
+scrollPic.timeLimit = 500;
+scrollPic.init();
+</script>
+</div>
+        </div>
+    </div>
+    <div class="blank40"></div>
+    <div class="kzbwg_main">
+    	<div class="qzblh_map">
+        <div id="allmap"></div>
+        <script type="text/javascript">
+
+
+
+
+	// 百度地图API功能
+			var map = new BMap.Map('allmap');
+    var poi = new BMap.Point(114.288010,30.674289);
+    map.centerAndZoom(poi, 15);
+    map.enableScrollWheelZoom();
+
+    var content = '<div style="margin:0;line-height:20px;padding:2px;">' +
+                    '<img src="images/map_ky.jpg" alt="" style="float:right;zoom:1;overflow:hidden;width:100px;height:100px;margin-left:3px;">' +
+                    '地址：湖北省武汉市东西湖区金银潭大道'+'</div>';
+
+    //创建检索信息窗口对象
+    var searchInfoWindow = null;
+	searchInfoWindow = new BMapLib.SearchInfoWindow(map, content, {
+			title  : "武汉客厅",      //标题
+			width  : 290,             //宽度
+			height : 105,              //高度
+			panel  : "panel",         //检索结果面板
+			enableAutoPan : true,     //自动平移
+			searchTypes   :[
+				BMAPLIB_TAB_SEARCH,   //周边检索
+				BMAPLIB_TAB_TO_HERE,  //到这里去
+				BMAPLIB_TAB_FROM_HERE //从这里出发
+			]
+		});
+    var marker = new BMap.Marker(poi); //创建marker对象
+    marker.enableDragging(); //marker可拖拽
+    marker.addEventListener("click", function(e){
+	    searchInfoWindow.open(marker);
+    })
+	map.addOverlay(marker);
+	function openInfoWindow3() {
+		searchInfoWindow3.open(new BMap.Point(114.288010,30.674289)); }
+		</script>
+        
+        </div>
+        <div class="qzblh_mapjj">
+        	<h2>交通指南</h2>
+            <p>（1）地铁：乘地铁2号线在终点站金银潭站下车并从B出口出站，再转乘武汉客厅免费接送大巴至武汉客厅·中国（武汉）文化博览中心。</p>
+            <p>（2）公交：武汉市内乘35、216、286、290、291、295、296、299路公汽在宏图路站下车即到。</p>
+            <p>（3）自驾：驾车从金桥大道转三环线盘龙立交下，转至宏图路即到。</p>
+        </div>
+    </div>
+	<div class="blank21"></div>
+    <script src="http://www.cnhubei.com/public/script/cnhubei_zt_bottom.js" charset="gb2312" ignoreapd="1">
+
+
+
+</script>
+</body>
+</html>
