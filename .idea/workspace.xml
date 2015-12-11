@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5f490983-c59f-4b51-b8b0-cafdddf3dfc6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/NCrawlMan/UrlCrawal/UrlCheck.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NCrawlMan/Utils/BloomFilter.java" afterPath="$PROJECT_DIR$/src/NCrawlMan/Utils/BloomFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NCrawlMan/Utils/ContentSave.java" afterPath="$PROJECT_DIR$/src/NCrawlMan/Utils/ContentSave.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NCrawlMan/Utils/FileDownloadMonitor.java" afterPath="$PROJECT_DIR$/src/NCrawlMan/Utils/FileDownloadMonitor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NCrawlMan/Downloader/HtmlContent.java" afterPath="$PROJECT_DIR$/src/NCrawlMan/Downloader/HtmlContent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NCrawlMan/Downloader/HttpDownload.java" afterPath="$PROJECT_DIR$/src/NCrawlMan/Downloader/HttpDownload.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NCrawlMan/Downloader/HttpUrlConnectionFactory.java" afterPath="$PROJECT_DIR$/src/NCrawlMan/Downloader/HttpUrlConnectionFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NCrawlMan/Utils/SignalConstants.java" afterPath="$PROJECT_DIR$/src/NCrawlMan/Utils/SignalConstants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NCrawlMan/Downloader/Spider.java" afterPath="$PROJECT_DIR$/src/NCrawlMan/Downloader/Spider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NCrawlMan/Downloader/ThreadPool.java" afterPath="$PROJECT_DIR$/src/NCrawlMan/Downloader/ThreadPool.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NCrawlMan/Utils/TorrentConstants.java" afterPath="$PROJECT_DIR$/src/NCrawlMan/Utils/TorrentConstants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NCrawlMan/UrlCrawal/UrlCollect.java" afterPath="$PROJECT_DIR$/src/NCrawlMan/UrlCrawal/UrlCollect.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NCrawlMan/UrlCrawal/UrlCrawal.java" afterPath="$PROJECT_DIR$/src/NCrawlMan/UrlCrawal/UrlCrawal.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NCrawlMan/UrlManager/UrlQueueManage.java" afterPath="$PROJECT_DIR$/src/NCrawlMan/UrlManager/UrlQueueManage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NCrawlMan/UrlManager/UrlQueueMonitor.java" afterPath="$PROJECT_DIR$/src/NCrawlMan/UrlManager/UrlQueueMonitor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NCrawlMan/initConf/torrent.java" afterPath="$PROJECT_DIR$/src/NCrawlMan/initConf/torrent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/url.txt" afterPath="$PROJECT_DIR$/url.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="5f490983-c59f-4b51-b8b0-cafdddf3dfc6" name="Default" comment="" />
     <ignored path="untitled.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -848,12 +828,12 @@
       <workItem from="1448538377256" duration="46749000" />
       <workItem from="1448878012168" duration="50031000" />
       <workItem from="1449506306923" duration="1062000" />
-      <workItem from="1449572497181" duration="50650000" />
+      <workItem from="1449572497181" duration="50805000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="149678000" />
+    <option name="totallyTimeSpent" value="149833000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -1042,10 +1022,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1449834593000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1449834593000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1449834593000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1449834593000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1449835031000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1449835031000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1449835031000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1449835031000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
