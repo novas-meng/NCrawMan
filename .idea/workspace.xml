@@ -2,7 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f490983-c59f-4b51-b8b0-cafdddf3dfc6" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled/NCrawlMan/Downloader/Spider.class" afterPath="$PROJECT_DIR$/out/production/untitled/NCrawlMan/Downloader/Spider.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled/NCrawlMan/Utils/TorrentConstants.class" afterPath="$PROJECT_DIR$/out/production/untitled/NCrawlMan/Utils/TorrentConstants.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled/NCrawlMan/UrlCrawal/UrlCheck.class" afterPath="$PROJECT_DIR$/out/production/untitled/NCrawlMan/UrlCrawal/UrlCheck.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled/NCrawlMan/UrlCrawal/UrlCollect.class" afterPath="$PROJECT_DIR$/out/production/untitled/NCrawlMan/UrlCrawal/UrlCollect.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled/NCrawlMan/UrlManager/UrlQueueManage.class" afterPath="$PROJECT_DIR$/out/production/untitled/NCrawlMan/UrlManager/UrlQueueManage.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/untitled/NCrawlMan/UrlManager/UrlQueueMonitor.class" afterPath="$PROJECT_DIR$/out/production/untitled/NCrawlMan/UrlManager/UrlQueueMonitor.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NCrawlMan/Downloader/Spider.java" afterPath="$PROJECT_DIR$/src/NCrawlMan/Downloader/Spider.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NCrawlMan/Utils/TorrentConstants.java" afterPath="$PROJECT_DIR$/src/NCrawlMan/Utils/TorrentConstants.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NCrawlMan/UrlCrawal/UrlCheck.java" afterPath="$PROJECT_DIR$/src/NCrawlMan/UrlCrawal/UrlCheck.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NCrawlMan/UrlCrawal/UrlCollect.java" afterPath="$PROJECT_DIR$/src/NCrawlMan/UrlCrawal/UrlCollect.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NCrawlMan/UrlManager/UrlQueueManage.java" afterPath="$PROJECT_DIR$/src/NCrawlMan/UrlManager/UrlQueueManage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NCrawlMan/UrlManager/UrlQueueMonitor.java" afterPath="$PROJECT_DIR$/src/NCrawlMan/UrlManager/UrlQueueMonitor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="untitled.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,7 +41,17 @@
         <entry file="file://$PROJECT_DIR$/src/NCrawlMan/Downloader/HttpDownload.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="122" column="14" selection-start-line="122" selection-start-column="14" selection-end-line="122" selection-end-column="14" />
+              <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TorrentConstants.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/NCrawlMan/Utils/TorrentConstants.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.64102566">
+              <caret line="30" column="43" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -41,52 +63,8 @@
             <state vertical-scroll-proportion="0.0">
               <caret line="66" column="28" selection-start-line="66" selection-start-column="28" selection-end-line="66" selection-end-column="28" />
               <folding>
-                <element signature="e#3379#3380#0" expanded="true" />
-                <element signature="e#3429#3430#0" expanded="true" />
                 <element signature="e#3696#3709#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UrlCheck.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/NCrawlMan/UrlCrawal/UrlCheck.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="127" column="12" selection-start-line="127" selection-start-column="12" selection-end-line="127" selection-end-column="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ContentSave.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/NCrawlMan/Utils/ContentSave.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="79" column="7" selection-start-line="79" selection-start-column="7" selection-end-line="79" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TorrentConstants.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/NCrawlMan/Utils/TorrentConstants.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Spider.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/NCrawlMan/Downloader/Spider.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.38961038">
-              <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -104,24 +82,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UrlQueueManage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/NCrawlMan/UrlManager/UrlQueueManage.java">
+      <file leaf-file-name="UrlQueueMonitor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/NCrawlMan/UrlManager/UrlQueueMonitor.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+              <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="url.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/url.txt">
-          <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-            <state />
-          </provider>
+      <file leaf-file-name="UrlQueueManage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/NCrawlMan/UrlManager/UrlQueueManage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.896552">
-              <caret line="51" column="7" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="82" column="16" selection-start-line="82" selection-start-column="16" selection-end-line="82" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="crawlqueue.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/NCrawlMan/UrlManager/crawlqueue.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Queue.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home/src.zip!/java/util/Queue.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="143" column="17" selection-start-line="143" selection-start-column="17" selection-end-line="143" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -131,9 +126,21 @@
         <entry file="file://$PROJECT_DIR$/src/NCrawlMan/UrlCrawal/UrlCollect.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="267" column="13" selection-start-line="267" selection-start-column="13" selection-end-line="267" selection-end-column="13" />
+              <caret line="276" column="39" selection-start-line="276" selection-start-column="39" selection-end-line="276" selection-end-column="39" />
               <folding>
                 <element signature="e#574#582#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UrlCheck.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/NCrawlMan/UrlCrawal/UrlCheck.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="182" column="22" selection-start-line="182" selection-start-column="22" selection-end-line="182" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -189,25 +196,25 @@
         <option value="$PROJECT_DIR$/src/NCrawlMan/UrlManager/crawlqueue.java" />
         <option value="$PROJECT_DIR$/topoorder.txt" />
         <option value="$PROJECT_DIR$/src/TopoOrder.java" />
-        <option value="$PROJECT_DIR$/src/NCrawlMan/UrlManager/UrlQueueMonitor.java" />
         <option value="$PROJECT_DIR$/src/NCrawlMan/Utils/SignalConstants.java" />
         <option value="$PROJECT_DIR$/src/NCrawlMan/Downloader/HttpUrlConnectionFactory.java" />
         <option value="$PROJECT_DIR$/src/NCrawlMan/initConf/torrent.java" />
         <option value="$PROJECT_DIR$/src/NCrawlMan/Utils/FileDownloadMonitor.java" />
-        <option value="$PROJECT_DIR$/src/NCrawlMan/UrlManager/UrlQueueManage.java" />
         <option value="$PROJECT_DIR$/src/NCrawlMan/Downloader/HtmlContent.java" />
         <option value="$PROJECT_DIR$/src/NCrawlMan/Utils/BloomFilter.java" />
         <option value="$PROJECT_DIR$/testurl.txt" />
-        <option value="$PROJECT_DIR$/src/NCrawlMan/UrlCrawal/UrlCheck.java" />
         <option value="$PROJECT_DIR$/src/NCrawlMan/Downloader/ThreadPool.java" />
         <option value="$PROJECT_DIR$/src/NCrawlMan/Downloader/HttpDownload.java" />
         <option value="$PROJECT_DIR$/src/NCrawlMan/Utils/ContentSave.java" />
-        <option value="$PROJECT_DIR$/src/NCrawlMan/Utils/TorrentConstants.java" />
         <option value="$PROJECT_DIR$/url.txt" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/NCrawlMan/UrlCrawal/UrlCollect.java" />
         <option value="$PROJECT_DIR$/src/NCrawlMan/UrlCrawal/UrlCrawal.java" />
         <option value="$PROJECT_DIR$/src/NCrawlMan/Downloader/Spider.java" />
+        <option value="$PROJECT_DIR$/src/NCrawlMan/UrlManager/UrlQueueMonitor.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/NCrawlMan/UrlManager/UrlQueueManage.java" />
+        <option value="$PROJECT_DIR$/src/NCrawlMan/Utils/TorrentConstants.java" />
+        <option value="$PROJECT_DIR$/src/NCrawlMan/UrlCrawal/UrlCollect.java" />
+        <option value="$PROJECT_DIR$/src/NCrawlMan/UrlCrawal/UrlCheck.java" />
       </list>
     </option>
   </component>
@@ -830,12 +837,12 @@
       <workItem from="1448538377256" duration="46749000" />
       <workItem from="1448878012168" duration="50031000" />
       <workItem from="1449506306923" duration="1062000" />
-      <workItem from="1449572497181" duration="50964000" />
+      <workItem from="1449572497181" duration="57894000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="149992000" />
+    <option name="totallyTimeSpent" value="156922000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -859,7 +866,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32876712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1024,10 +1031,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1449835307000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1449835307000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1449835307000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1449835307000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1449846955000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1449846955000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1449846955000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1449846955000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1039,22 +1046,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.896552">
           <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NCrawlMan/UrlManager/UrlQueueMonitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NCrawlMan/UrlManager/crawlqueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -1122,14 +1113,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home/src.zip!/java/util/Queue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="161" column="12" selection-start-line="161" selection-start-column="12" selection-end-line="161" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -1225,18 +1208,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/NCrawlMan/Utils/TorrentConstants.java">
+    <entry file="file://$PROJECT_DIR$/src/NCrawlMan/Utils/ContentSave.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+          <caret line="79" column="7" selection-start-line="79" selection-start-column="7" selection-end-line="79" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/NCrawlMan/UrlManager/UrlQueueManage.java">
+    <entry file="file://$PROJECT_DIR$/src/NCrawlMan/Downloader/Spider.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <caret line="75" column="21" selection-start-line="75" selection-start-column="21" selection-end-line="75" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -1246,27 +1229,35 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.896552">
+        <state vertical-scroll-proportion="-20.103449">
           <caret line="51" column="7" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/NCrawlMan/UrlCrawal/UrlCheck.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home/src.zip!/java/util/Queue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="127" column="12" selection-start-line="127" selection-start-column="12" selection-end-line="127" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="143" column="17" selection-start-line="143" selection-start-column="17" selection-end-line="143" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/NCrawlMan/Utils/ContentSave.java">
+    <entry file="file://$PROJECT_DIR$/src/NCrawlMan/UrlManager/UrlQueueMonitor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="79" column="7" selection-start-line="79" selection-start-column="7" selection-end-line="79" selection-end-column="7" />
+          <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NCrawlMan/UrlCrawal/UrlCrawal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="66" column="28" selection-start-line="66" selection-start-column="28" selection-end-line="66" selection-end-column="28" />
+          <folding>
+            <element signature="e#3696#3709#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1281,12 +1272,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/NCrawlMan/UrlManager/crawlqueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NCrawlMan/UrlManager/UrlQueueManage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="82" column="16" selection-start-line="82" selection-start-column="16" selection-end-line="82" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/NCrawlMan/UrlCrawal/UrlCollect.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="267" column="13" selection-start-line="267" selection-start-column="13" selection-end-line="267" selection-end-column="13" />
+          <caret line="276" column="39" selection-start-line="276" selection-start-column="39" selection-end-line="276" selection-end-column="39" />
           <folding>
             <element signature="e#574#582#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NCrawlMan/UrlCrawal/UrlCheck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="182" column="22" selection-start-line="182" selection-start-column="22" selection-end-line="182" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1294,27 +1311,15 @@
     <entry file="file://$PROJECT_DIR$/src/NCrawlMan/Downloader/HttpDownload.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="122" column="14" selection-start-line="122" selection-start-column="14" selection-end-line="122" selection-end-column="14" />
+          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/NCrawlMan/UrlCrawal/UrlCrawal.java">
+    <entry file="file://$PROJECT_DIR$/src/NCrawlMan/Utils/TorrentConstants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="66" column="28" selection-start-line="66" selection-start-column="28" selection-end-line="66" selection-end-column="28" />
-          <folding>
-            <element signature="e#3379#3380#0" expanded="true" />
-            <element signature="e#3429#3430#0" expanded="true" />
-            <element signature="e#3696#3709#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NCrawlMan/Downloader/Spider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38961038">
-          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.64102566">
+          <caret line="30" column="43" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
           <folding />
         </state>
       </provider>

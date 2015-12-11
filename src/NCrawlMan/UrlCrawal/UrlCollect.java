@@ -228,7 +228,7 @@ public class UrlCollect
         }
 
      // provideUrlForWaitingQueue(set);
-        urlSort(set,baseurl);
+        urlSort(set, baseurl);
     }
     /*
     在从网页中提取的众多url中，这些url应该按照与baseurl的相似度进行排序，先抓取相似的url；
@@ -239,8 +239,45 @@ public class UrlCollect
     */
     public void  urlSort(Set<String> stringSet,String baseurl)
     {
-        List<String> urllist=UrlCheck.urlSort(stringSet, baseurl);
+        List<String> addToHeadList=new ArrayList<>();
+        List<String> urllist=UrlCheck.urlSort(stringSet, baseurl,addToHeadList);
         provideUrlForWaitingQueue(urllist);
+        provideFirstUrlForWaitingQueue(addToHeadList);
+      //  System.out.println(addToHeadList.size());
+       // for(int i=0;i<addToHeadList.size();i++)
+      //  {
+           //  System.out.println(addToHeadList.get(0));
+             //urlQueueManage.addFirstWaitingUrl(addToHeadList.get(i));
+       // }
+
+    }
+    //使用布隆过滤器进行过滤
+    public  void provideFirstUrlForWaitingQueue(List<String> set)
+    {
+        Iterator<String> stringIterator=set.iterator();
+        while(stringIterator.hasNext())
+        {
+            String url=stringIterator.next();
+            // System.out.println(url);
+            //筛选条件:布隆过滤器不存在 而且url满足规则
+            if(!BloomFilter.checkExistAndSet(url))
+            {
+
+                /*
+                try
+                {
+                    fileWriter.write(url+"\n");
+                }
+                catch (Exception e)
+                {
+                    e.printStackTrace();
+                }
+*/
+                //    System.out.println("添加url=" + url);
+                urlQueueManage.addFirstWaitingUrl(url);
+            }
+        }
+        set.clear();
     }
     //使用布隆过滤器进行过滤
     public  void provideUrlForWaitingQueue(List<String> set)
@@ -264,7 +301,7 @@ public class UrlCollect
                     e.printStackTrace();
                 }
 */
-               // System.out.println("添加url="+url);
+            //    System.out.println("添加url=" + url);
                 urlQueueManage.addWaitingUrl(url);
             }
         }

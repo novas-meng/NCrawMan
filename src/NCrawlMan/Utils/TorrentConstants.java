@@ -14,7 +14,7 @@ public class TorrentConstants {
     public static int FILE_TYPE_TEXT=2;
 
     //设置爬虫停止的条件，默认是以url
-    public static int MAXURLCOUNT=10;
+    public static int MAXURLCOUNT=200;
 
 
 
@@ -27,4 +27,6 @@ public class TorrentConstants {
 
     //设置是否允许下载图片
     public static boolean ALLOWED_IMAGE_DOWNLOADED=true;
+
+    public static boolean IMAGE_FIRST=true;
 }

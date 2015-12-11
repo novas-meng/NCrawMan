@@ -1,5 +1,7 @@
 package NCrawlMan.UrlCrawal;
 
+import NCrawlMan.Utils.TorrentConstants;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -110,7 +112,7 @@ public class UrlCheck
         }
         return hash;
     }
-    public static ArrayList<String> urlSort(Set<String> urlset,String baseurl)
+    public static ArrayList<String> urlSort(Set<String> urlset,String baseurl,List<String> headlist)
     {
         //List<String> list=Arrays.asList(urlset);
         ArrayList<String> list=new ArrayList<>();
@@ -173,7 +175,33 @@ public class UrlCheck
         urlset=null;
         for(int i=0;i<strings.length;i++)
         {
-            list.add(strings[index[i]]);
+          //  System.out.println("----" + distance[i] + "   " + index[i]);
+            if(TorrentConstants.IMAGE_FIRST)
+            {
+                if(strings[index[i]].endsWith(".jpg"))
+                headlist.add(strings[index[i]]);
+                else  if(distance[i]<30)
+                {
+                    headlist.add(strings[index[i]]);
+                }
+                else
+                {
+                    list.add(strings[index[i]]);
+                }
+
+            }
+            else
+            {
+                if(distance[i]<30)
+                {
+                    headlist.add(strings[index[i]]);
+                }
+                else
+                {
+                    list.add(strings[index[i]]);
+                }
+            }
+
         }
       //  System.out.println(list.size());
         for(int i=0;i<list.size();i++)

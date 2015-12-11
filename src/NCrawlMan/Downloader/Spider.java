@@ -14,7 +14,7 @@ public class Spider implements monitor
     /*
        线程停止方法采用wait 和 notify的方式；
        同时后台线程中采用join切换
-       
+
      */
     torrent torrent;
     UrlQueueManage manage;
@@ -73,6 +73,7 @@ public class Spider implements monitor
                 e.printStackTrace();
             }
         }
+        System.exit(0);
        // System.out.println("运行........");
        // System.out.println(Thread.currentThread().getName()+"  "+ThreadPool.Apprun);
 
