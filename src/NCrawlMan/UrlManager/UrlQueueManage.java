@@ -1,5 +1,8 @@
 package NCrawlMan.UrlManager;
 
+import NCrawlMan.Utils.SignalConstants;
+import NCrawlMan.Utils.TorrentConstants;
+
 import java.io.File;
 import java.util.*;
 
@@ -67,18 +70,23 @@ public class UrlQueueManage implements crawlqueue
       //  System.out.println("添加的队列为"+key);
         Queue<String> queue=waitingUrlMap.get(key);
         queue.add(url);
+        //进行判断当队列中url数量太多的时候，将url写入文件中
+        if(queue.size()> TorrentConstants.MAX_QUEUE_URL_COUNT)
+        {
+            urlQueueMonitor.postSignal(urlQueueMonitor, SignalConstants.ABOVE_URL_MAXCOUNT);
+        }
         //开启url数量检测
-        urlQueueMonitor.monitor();
+       // urlQueueMonitor.monitor();
     }
     public String provideUrlForHttpDownload(String currentThreadName)
     {
-        System.out.println("当前获取连接的线程为"+currentThreadName);
+       // System.out.println("当前获取连接的线程为"+currentThreadName);
         Queue<String> waitingQueue=waitingUrlMap.get(currentThreadName);
         while (waitingQueue.isEmpty())
         {
 
         }
-        System.out.println("等待爬去url个数" + waitingQueue.size());
+      //  System.out.println("等待爬去url个数" + waitingQueue.size());
         return waitingQueue.poll();
     }
     public boolean hasWaitUrl(String currentThreadName)

@@ -19,7 +19,8 @@ public class FileDownloadMonitor implements monitor
     public  void addDownloadUrlCount()
     {
         urldownloadcount++;
-        if(urldownloadcount==TorrentConstants.MAXURLCOUNT)
+        System.out.println("已经接受到的url个数为="+urldownloadcount);
+        if(urldownloadcount>=TorrentConstants.MAXURLCOUNT)
         {
             threadMonitor=ThreadPool.getThreadPoolInstance();
             postSignal(threadMonitor,SignalConstants.APP_STOPED);

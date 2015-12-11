@@ -13,7 +13,7 @@ import java.net.URLConnection;
 /**
  * Created by novas on 15/11/26.
  */
-public class HttpDownload  extends Thread implements download
+public class HttpDownload  implements download,Runnable
 {
     private HttpURLConnection httpURLConnection;
     private UrlQueueManage urlQueueManage;
@@ -31,40 +31,34 @@ public class HttpDownload  extends Thread implements download
         }
         return download;
     }
+    /*
     public void provideForCrawal(String url,String content,UrlCrawal urlCrawal)
     {
        urlCrawal.addWaitingHandleContent(new HtmlContent(content,url));
     }
+    */
     public static String getEncodingCode(String header)
     {
          String index="charset=".intern();
          int loc=header.indexOf(index);
          int end=header.indexOf('"',loc);
+         if(loc==-1)
+         {
+             return "utf-8";
+         }
          return header.substring(loc+index.length(),end);
     }
     @Override
     public  void download(String url, HttpURLConnection httpURLConnection) {
-        //return null;
-       //  System.out.println("开始下载") ;
         InputStream is=null;
         byte[] bytes;
+        String encode=null;
         try
         {
-            System.out.println(httpURLConnection.getResponseCode());
+          //  System.out.println(httpURLConnection.getResponseCode());
             if(httpURLConnection.getResponseCode()==200)
             {
                 is=httpURLConnection.getInputStream();
-                /*
-                BufferedReader br=new BufferedReader(new InputStreamReader(is));
-                FileWriter fw=new FileWriter("novastemp.html");
-                String line=br.readLine();
-                while(line!=null)
-                {
-                    fw.write(line);
-                    line=br.readLine();
-                }
-                */
-             //   System.out.println("over");
                 bytes=new byte[1024];
                 byte[] desbytes=new byte[1024];
                 int length=0;
@@ -82,26 +76,17 @@ public class HttpDownload  extends Thread implements download
                     desloc=desloc+length;
                     lastlength=length;
                 }
+                //bytes存放着url内容的二进制表示
                 bytes=new byte[k+lastlength];
-
                 System.arraycopy(desbytes, 0, bytes, 0, bytes.length);
-
-                String encode=getEncodingCode(new String(bytes,0,1024));
-            //    String encode= httpURLConnection.getContentType();
-            //    System.out.println("encode="+encode);
-            //    int loc=encode.indexOf("=");
-            //    encode=encode.substring(loc + 1);
-              //  System.out.println("encode="+encode);
-                FileWriter fw=new FileWriter("novastemp.html");
-                fw.write(new String(bytes,encode));
-                fw.close();
+              //  encode=getEncodingCode(new String(bytes,0,1024));
+                System.out.println("当前处理url="+url);
                 crawal=UrlCrawal.getUrlCrawalInstance();
-               // System.out.println("成功"+new String(bytes));
-
-             //   provideForCrawal(url, new String(bytes, encode), crawal);
+                crawal.addWaitingHandleContent(new HtmlContent(bytes,url));
             }
             else
             {
+                System.out.println("url="+url);
                 urlQueueManage.addFailUrl(url);
             }
 
@@ -109,6 +94,8 @@ public class HttpDownload  extends Thread implements download
         catch (Exception e)
         {
             e.printStackTrace();
+            System.out.println("encode="+encode);
+            System.out.println("url="+url);
             urlQueueManage.addFailUrl(url);
         }
 
@@ -123,10 +110,15 @@ public class HttpDownload  extends Thread implements download
     public void download() {
        // return null;
         urlQueueManage=UrlQueueManage.getUrlQueueManageInstance();
-        while(true&&this.isInterrupted())
+       // while(true&&!this.isInterrupted())
+        while (ThreadPool.map.get(Thread.currentThread().getName())==0)
         {
-            while(urlQueueManage.hasWaitUrl(Thread.currentThread().getName()))
+           // System.out.println("启动");
+
+            while(urlQueueManage.hasWaitUrl(Thread.currentThread().getName())&&ThreadPool.map.get(Thread.currentThread().getName())==0)
             {
+                System.out.println(Thread.currentThread().getName());
+                System.out.println("后台进程状态" + UrlCrawal.handler.getState());
                 String url=urlQueueManage.provideUrlForHttpDownload(Thread.currentThread().getName());
                 System.out.println("down"+url);
                 httpURLConnection=HttpUrlConnectionFactory.getHttpURLConnection(url);

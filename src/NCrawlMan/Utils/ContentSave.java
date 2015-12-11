@@ -19,7 +19,6 @@ public class ContentSave
         {
             dir.mkdirs();
         }
-
     }
     public static ContentSave getContentSaveInstance()
     {
@@ -46,7 +45,7 @@ public class ContentSave
     {
         File f=null;
         FileOutputStream fw=null;
-        f=new File(transferUrlToFilename(url));
+        f=new File(TorrentConstants.DEFAULT_DOWNLOAD_DIR,transferUrlToFilename(url));
         try
         {
             fw=new FileOutputStream(f);
@@ -57,6 +56,8 @@ public class ContentSave
         {
             e.printStackTrace();
         }
+        fileDownloadMonitor=FileDownloadMonitor.getFileDownloadMonitorInstance();
+        fileDownloadMonitor.addDownloadUrlCount();
     }
     //每次成功写入一个网页文本内容，FileDownloadMonitor便会增加
     public void saveTextToFile(String url,String content)

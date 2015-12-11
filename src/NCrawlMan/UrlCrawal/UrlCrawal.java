@@ -1,8 +1,11 @@
 package NCrawlMan.UrlCrawal;
 
 import NCrawlMan.Downloader.HtmlContent;
+import NCrawlMan.Downloader.Spider;
+import NCrawlMan.Downloader.ThreadPool;
 import NCrawlMan.UrlManager.UrlQueueManage;
 import NCrawlMan.Utils.ContentSave;
+import NCrawlMan.Utils.TorrentConstants;
 
 import java.io.FileWriter;
 import java.lang.ref.ReferenceQueue;
@@ -23,8 +26,9 @@ public class UrlCrawal {
     private static UrlQueueManage urlQueueManage;
     private static UrlCollect urlCollect;
     private static ContentSave contentSave;
+    public static Thread handler;
     //后台进程，负责从获取到的内容中提取出url,然后将内容保存到文件
-    private static class QueueHandler extends Thread
+    private static class QueueHandler  extends Thread
     {
         public QueueHandler(ThreadGroup group,String name)
         {
@@ -33,7 +37,7 @@ public class UrlCrawal {
         @Override
         public void run() {
             System.out.println("后台进程启动");
-            for(;;)
+            while (ThreadPool.Apprun)
             {
                 synchronized (lock)
                 {
@@ -41,12 +45,37 @@ public class UrlCrawal {
                     {
                         System.out.println("=======");
                         HtmlContent htmlcontent=waitingforHandleQueue.poll();
-                        urlCollect.collect(htmlcontent.content,htmlcontent.url);
-                        contentSave.saveTextToFile(htmlcontent.url,htmlcontent.content);
+                        htmlcontent.parse();
+                        if(htmlcontent.type== TorrentConstants.FILE_TYPE_TEXT)
+                        {
+                            urlCollect.collectUrl(htmlcontent.content, htmlcontent.url);
+                           // contentSave.saveTextToFile(htmlcontent.url,htmlcontent.content);
+                        }
+                        else
+                        {
+                            contentSave.saveImageToFile(htmlcontent.url,htmlcontent.bytes);
+                        }
                     }
                 }
             }
+
+          //  System.out.println("后台进程结束");
+          //  this.setPriority(Thread.MIN_PRIORITY);
+
+         //   Thread.yield();
+            try {
+                Spider.mainThread.join();
+              //  System.out.println("后台进程结束");
+            }
+            catch (Exception e)
+            {
+                e.printStackTrace();
+            }
+            System.out.println(Thread.currentThread().getName());
+//
+           // this.setDaemon(false);
         }
+
     }
     static
     {
@@ -55,7 +84,9 @@ public class UrlCrawal {
         for (ThreadGroup tgn = tg;
              tgn != null;
              tg = tgn, tgn = tg.getParent());
-        Thread handler=new QueueHandler(group,"QueueHandler");
+        handler=new QueueHandler(group,"QueueHandler");
+       // handler=new Thread(new QueueHandler());
+       // handler.setName("sdfasdf");
         handler.setPriority(Thread.MAX_PRIORITY);
         handler.setDaemon(true);
         handler.start();

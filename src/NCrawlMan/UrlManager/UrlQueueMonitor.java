@@ -35,7 +35,7 @@ public class UrlQueueMonitor implements monitor
         urlQueueManage=UrlQueueManage.getUrlQueueManageInstance();
         HashMap<String,Queue<String>> map=urlQueueManage.getWaitingUrlMap();
         Set<Map.Entry<String,Queue<String>>> entrySet=map.entrySet();
-        //Iterator<String>
+       // Iterator<String,Queue<String>> iterator=entrySet.iterator();
     }
 
     @Override

@@ -25,13 +25,18 @@ public class BloomFilter {
         int index=loc/64;
         int bit=loc%64;
         long m=filter[index];
+      //  System.out.println("..."+(m>>bit&1));
         return (m>>bit&1)==1?false:true;
     }
+    //filter设置bit位
     public static void setArray(int loc,long[] filter)
     {
         int index=loc/64;
         int bit=loc%64;
-        filter[index]= (1<<bit)|filter[index];
+        long m=1;
+      //  System.out.println(index+"  "+bit+"  "+filter[index]);
+        filter[index]= (m<<bit)|filter[index];
+      //  System.out.println(filter[index]+" "+Math.pow(2,47)+"  "+(1<<12));
     }
     public static int JSHash(String str)
     {
@@ -64,65 +69,25 @@ public class BloomFilter {
         hash |= FNVHash1(str);
         return hash;
     }
-    static int max(int[] codes)
-    {
-        int max=codes[0];
-        if(codes[1]>max)
-        {
-            max=codes[1];
-        }
-        if(codes[2]>max)
-        {
-            max=codes[2];
-        }
-        if(codes[3]>max)
-        {
-            max=codes[3];
-        }
-        return max;
-    }
-    static int min(int[] codes)
-    {
-        int min=codes[0];
-        if(codes[1]<min)
-        {
-            min=codes[1];
-        }
-        if(codes[2]<min)
-        {
-            min=codes[2];
-        }
-        if(codes[3]<min)
-        {
-            min=codes[3];
-        }
-        return min;
-    }
-    public static boolean checkExistAndSet(String url)
+
+    public static synchronized boolean checkExistAndSet(String url)
     {
         long longhashcode=mixHash(url);
         int shorthashcode=url.hashCode();
-       // System.out.println(url);
-       // System.out.println(longhashcode+"    "+shorthashcode);
         int[] codes=createHashArray(longhashcode,shorthashcode);
-        /*
-        if(min(codes)<min)
-        {
-            min=min(codes);
-        }
-        if(max(codes)>max)
-        {
-            max=max(codes);
-        }
-        */
-      //  System.out.println(codes[0]+"   "+codes[1]+"   "+codes[2]+"   "+codes[3]);
         if(arrayiszero(codes[0],hostfilter)||arrayiszero(codes[1],hostfilter)||arrayiszero(codes[2],dirfilter)||arrayiszero(codes[3],dirfilter))
-       // if(arrayiszero(codes[0]))
         {
             setArray(codes[0],hostfilter);
-            setArray(codes[1],hostfilter);
-            setArray(codes[2],dirfilter);
-            setArray(codes[3],dirfilter);
+           // System.out.println("   "+arrayiszero(codes[0], hostfilter));
+            setArray(codes[1], hostfilter);
+           // System.out.println("    "+arrayiszero(codes[1], hostfilter));
+
+            setArray(codes[2], dirfilter);
+          //  System.out.println("    "+arrayiszero(codes[2], dirfilter) + " " + codes[2]);
+
+            setArray(codes[3], dirfilter);
+         //   System.out.println("    "+arrayiszero(codes[3], dirfilter));
+
             return false;
         }
         return true;
@@ -185,125 +150,4 @@ public class BloomFilter {
       //  res=res>>1;
         return (int)res;
     }
-    //生成hash的函数，将生成的64bit hash 拆分。
-    public  static long MurmurHash64B ( String key)
-    {
-         int m = 0x5bd1e995;
-         int r = 24;
-         int len=key.length();
-         int seed=0xEE6B27EB;
-         int h1 = seed ^ len;
-         int h2 = 0;
-
-         char[] data = key.toCharArray();
-        int count=0;
-        while(len >= 8)
-        {
-             int k1 = data[count];
-            count++;
-            k1 *= m; k1 ^= k1 >> r; k1 *= m;
-            h1 *= m; h1 ^= k1;
-            len -= 4;
-
-             int k2 = data[count];
-            count++;
-            k2 *= m; k2 ^= k2 >> r; k2 *= m;
-            h2 *= m; h2 ^= k2;
-            len -= 4;
-        }
-        switch(len)
-        {
-            case 3: h2 ^= data[2] << 16;
-            case 2: h2 ^= data[1] << 8;
-            case 1: h2 ^= data[0];
-                h2 *= m;
-        };
-        if(len >= 4)
-        {
-             int k1 = data[count];
-            count++;
-            k1 *= m; k1 ^= k1 >> r; k1 *= m;
-            h1 *= m; h1 ^= k1;
-            len -= 4;
-        }
-        h1 ^= h2 >> 18; h1 *= m;
-        h2 ^= h1 >> 22; h2 *= m;
-        h1 ^= h2 >> 17; h1 *= m;
-        h2 ^= h1 >> 19; h2 *= m;
-
-         long h = h1;
-
-        h = (h << 32) | h2;
-        return h;
-    }
-   // byte[] fliter1=new byte[Integer.MAX_VALUE];
-   // static long filter=0;
-
-    public static void main(String[] args)throws Exception
-    {
-      //  double m=1/Math.log(2)*10000000*Math.log(1/0.001)/Math.log(2);
-       // double k=Math.log(2)*m/10000000;
-      //  System.out.println(m+" "+k);
-      //  String ma="ddd";
-       // ma.hashCode();
-       // System.out.println(MurmurHash64B("www.baidu.com/test"));
-
-        long m=175;
-       // String url="http://img2.26tuugvlloppiyex/klluy/1zixbuxjqt4.jpg";
-        BufferedReader bufferedReader=new BufferedReader(new FileReader("temp.txt"));
-        String url=bufferedReader.readLine();
-        long n=System.currentTimeMillis();
-       // System.out.println(splitToHash(m,0,0));
-        int count=0;
-      //  String l="http://img2.228/1zixbuxjqt4.jpg";
-        Set<String> set=new HashSet<>();
-        int max=0;
-        while (url!=null)
-        {
-          //  url=url+i;
-          //  if(i%10000==0)
-               // System.out.println(url);
-/*
-            if(url.startsWith("http://"))
-            {
-                try
-                {
-                   // int a=url.indexOf("http://");
-                  //  int b=url.indexOf('/',a+1);
-                    int c=url.indexOf('/',8);
-                    if(c!=-1)
-                    url=url.substring(c);
-                }
-                catch (Exception e)
-                {
-                    System.out.println(url);
-
-                }
-            }
-            else
-            {
-                try
-                {
-                    int c=url.indexOf('/');
-                    url=url.substring(c);
-                }
-                catch (Exception e)
-                {
-                    System.out.println("      "+url);
-
-                }
-
-            }
-            */
-            if(checkExistAndSet(url)) {
-                //System.out.println("判断失误了");
-                count++;
-            }
-            url=bufferedReader.readLine();
-        }
-
-        long mm=System.currentTimeMillis();
-        System.out.println("time="+(mm-n)+"   "+count+"   "+set.size()+"   "+max);
-    }
-
 }
