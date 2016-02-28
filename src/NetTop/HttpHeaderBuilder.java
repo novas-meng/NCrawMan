@@ -21,12 +21,15 @@ public class HttpHeaderBuilder {
     {
 
     }
+    /*
+      设置允许进行输入输出content-type是必须进行设置的
+     */
     public  void wrapHttpUrlConnection(HttpURLConnection httpURLConnection)
     {
         httpURLConnection.setDoInput(true);
         httpURLConnection.setDoOutput(true);
         httpURLConnection.setChunkedStreamingMode(1024);
-        httpURLConnection.setRequestProperty("connection", "keep-alive");
+       // httpURLConnection.setRequestProperty("connection", "keep-alive");
         httpURLConnection.setRequestProperty("Content-Type", CONTENT_TYPE + ";boundary=" + BOUNDARY);
     }
     public static HttpHeaderBuilder getHttpHeaderBuilderInstance()
@@ -37,62 +40,69 @@ public class HttpHeaderBuilder {
         }
         return httpHeaderBuilder;
     }
+    //支持传输多个文件和对应的字符串参数
     public void build(File file,OutputStream stream)throws Exception
     {
-        build(file,null,stream);
+        build(new File[]{file},null,stream);
+    }
+    public void build(File file,Map<String,String> map,OutputStream stream)throws Exception
+    {
+        build(new File[]{file},map,stream);
+    }
+    public void build(Map<String,String> map,OutputStream outputStream)throws Exception
+    {
+        build(new File[]{},map,outputStream);
     }
     public byte[] convertFileToByte(File file)throws Exception
     {
         InputStream is = new FileInputStream(file);
-        /*
-        byte[] bytes=new byte[1024];
-        byte[] desbytes=new byte[1024];
-        int length=0;
-        int desloc=0;
-        int lastlength=0;
-        int k=0;
-        while ((length=is.read(bytes))!=-1)
-        {
-            System.arraycopy(bytes,0,desbytes,desloc,length);
-            byte[] temp=new byte[desbytes.length+1024];
-            System.arraycopy(desbytes,0,temp,0,desbytes.length);
-            desbytes=temp;
-            k=desloc;
-            desloc=desloc+length;
-            lastlength=length;
-        }
-        bytes=new byte[k+lastlength];
-        System.arraycopy(desbytes, 0, bytes, 0, bytes.length);
-        is.close();
-        desbytes=null;
-        is=null;
-        */
         byte[] bytes=HttpUtils.ConvertInputStreamToBytes(is);
         return bytes;
     }
-    public void build(File file,Map<String,String> map,OutputStream outputStream)throws Exception
+    /*
+
+    将文件，map中包含的post参数依次写入到输出流中，http协议头包含固定的格式
+    每个单元开头是
+
+    --边界标识符\r\n
+    Content-......\r\n
+    Content-......\r\n
+    \r\n
+    文件内容
+    \r\n
+
+    以上是一个http请求头的格式，当所有的参数写入完成之后，写入文件结束标识符
+    --边界标识符--\r\n
+
+    http协议结束
+     */
+    public void build(File[] files,Map<String,String> map,OutputStream outputStream)throws Exception
     {
         String LINE=PREFIX+BOUNDARY+LINE_END;
-        StringBuffer sb = new StringBuffer();
-        if(file!=null)
+        for(File file:files)
         {
-            sb.append(LINE);
-            sb.append("Content-Disposition: form-data; name=\"img\"; filename=\""+file.getName()+"\""+LINE_END);
-            sb.append("Content-Type: application/octet-stream;"+LINE_END);
-            sb.append(LINE_END);
-            byte[] headerbytes=sb.toString().getBytes();
-            byte[] bytes=convertFileToByte(file);
+            System.out.println("添加图片");
+            if(file!=null)
+            {
+                StringBuffer sb = new StringBuffer();
+                sb.append(LINE);
+                sb.append("Content-Disposition: form-data; name=\"img\"; filename=\""+file.getName()+"\""+LINE_END);
+                sb.append("Content-Type: application/octet-stream;"+LINE_END);
+                sb.append(LINE_END);
+                byte[] headerbytes=sb.toString().getBytes();
+                byte[] bytes=convertFileToByte(file);
 
-            byte[] end_data = (LINE_END).getBytes();
-            byte[] all=new byte[headerbytes.length+bytes.length+end_data.length];
-            System.arraycopy(headerbytes,0,all,0,headerbytes.length);
-            System.arraycopy(bytes,0,all,headerbytes.length,bytes.length);
-            System.arraycopy(end_data,0,all,headerbytes.length+bytes.length,end_data.length);
-            outputStream.write(all);
+                byte[] end_data = (LINE_END).getBytes();
+                byte[] all=new byte[headerbytes.length+bytes.length+end_data.length];
+                System.arraycopy(headerbytes,0,all,0,headerbytes.length);
+                System.arraycopy(bytes, 0, all, headerbytes.length, bytes.length);
+                System.arraycopy(end_data, 0, all, headerbytes.length + bytes.length, end_data.length);
+                outputStream.write(all);
+            }
         }
         for(Map.Entry<String,String> entry:map.entrySet())
         {
-            sb=new StringBuffer();
+            StringBuffer sb = new StringBuffer();
             sb.append(LINE);
             sb.append("Content-Disposition: form-data; name=\""+entry.getKey() + LINE_END);
             sb.append(LINE_END);
@@ -103,8 +113,5 @@ public class HttpHeaderBuilder {
         byte[] end_data = (PREFIX+BOUNDARY+PREFIX+LINE_END).getBytes();
         outputStream.write(end_data);
     }
-    public void build(Map<String,String> map,OutputStream outputStream)throws Exception
-    {
-        build(null,map,outputStream);
-    }
+
 }

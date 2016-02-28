@@ -9,6 +9,7 @@ import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLConnection;
+import java.util.Map;
 
 /**
  * Created by novas on 15/11/26.
@@ -59,6 +60,8 @@ public class HttpDownload  implements download,Runnable
             if(httpURLConnection.getResponseCode()==200)
             {
                 is=httpURLConnection.getInputStream();
+                System.out.println(httpURLConnection.getHeaderFields());
+//                System.out.println(httpURLConnection.getRequestProperties());
                 bytes=new byte[1024];
                 byte[] desbytes=new byte[1024];
                 int length=0;

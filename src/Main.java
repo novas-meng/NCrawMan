@@ -43,7 +43,11 @@ public class Main
 
         torrent torrent=new torrent();
       //  torrent.addRootUrlList("http://www.9luyilu.net/yazhousetu/2015-11/12112.html");
-        torrent.addRootUrlList("http://44crcr.com/tupianqu/yazhou/107298.html");
+      //  torrent.addRootUrlList("http://44crcr.com/tupianqu/yazhou/107298.html");
+      //  torrent.addRootUrlList("http://tieba.baidu.com/f?kw=%B9%FE%B6%FB%B1%F5%B9%A4%D2%B5%B4%F3%D1%A7&fr=ala0&tpl=5");
+       // torrent.addRootUrlList("http://tieba.baidu.com/p/4207375225");
+       // torrent.addRootUrlList("http://blog.csdn.net/chenyong05314/article/details/50136725");
+        torrent.addRootUrlList("http://ypk.39.net/");
         Spider spider = Spider.getSpiderInstance(torrent);
         spider.start();
         String a="http://www.9luyilu.net";

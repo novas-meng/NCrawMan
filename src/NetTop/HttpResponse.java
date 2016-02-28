@@ -5,8 +5,9 @@ package NetTop;
  */
 public class HttpResponse
 {
-    public HttpResponse()
+    byte[] bytes;
+    public HttpResponse(byte[] bytes)
     {
-        
+        this.bytes=bytes;
     }
 }

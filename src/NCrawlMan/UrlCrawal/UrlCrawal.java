@@ -49,7 +49,7 @@ public class UrlCrawal {
                         if(htmlcontent.type== TorrentConstants.FILE_TYPE_TEXT)
                         {
                             urlCollect.collectUrl(htmlcontent.content, htmlcontent.url);
-                           // contentSave.saveTextToFile(htmlcontent.url,htmlcontent.content);
+                            contentSave.saveTextToFile(htmlcontent.url,htmlcontent.content);
                         }
                         else
                         {
